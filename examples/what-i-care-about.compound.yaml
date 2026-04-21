@@ -1,0 +1,40 @@
+# Sidecar for what-i-care-about.md
+# Consumed by pi-compound. The .md file ships to your Pi system prompt as-is.
+
+purpose: >
+  Things I care about — durable preferences, recurring concerns, principles
+  I return to. The kind of context I want every Pi session to have about me
+  without me having to repeat it.
+
+criteria: |
+  Propose an item when, in a Pi session, I:
+  - express a recurring preference, principle, or concern that's likely to
+    matter beyond the current task
+  - return to the same topic or value across multiple turns or sessions
+  - explicitly state "I care about X" or "what matters to me is Y"
+  - reject something with a principled reason (not just a one-off correction)
+  - mention a domain, tool, or pattern I'm clearly invested in over time
+
+  DO NOT propose:
+  - one-off task instructions
+  - communication style preferences (those go in how-to-communicate-with-me)
+  - default-assumption corrections (those go in how-to-assume-with-me)
+  - in-progress todos (those go in things-i-want-to-do if you have one)
+
+structure: |
+  Short H2 sections. Each section opens with the principle or care plainly
+  stated, followed by 1–3 sentences of nuance and what it implies for the
+  agent's behavior. Imperative voice. No hedging.
+
+style_examples:
+  - |
+    ## Effect-first development
+
+    I care about Effect as the primary substrate for new TypeScript work.
+    When evaluating designs, prefer Effect-native primitives over ad-hoc
+    Promise / try-catch / event-emitter patterns. Cite the relevant Effect
+    skill when proposing one.
+
+scope:
+  min_confidence: medium
+  max_proposals_per_run: 5

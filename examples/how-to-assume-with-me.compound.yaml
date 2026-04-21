@@ -1,0 +1,43 @@
+# Sidecar for how-to-assume-with-me.md
+# Consumed by pi-compound. The .md file ships to your Pi system prompt as-is.
+
+purpose: >
+  Default assumptions the agent should and should NOT make about my
+  preferences, goals, and decision criteria. These are the priors that
+  govern interpretation when I haven't been explicit.
+
+criteria: |
+  Propose an item when, in a Pi session, I:
+  - corrected an assumption the agent made about my goals, taste, or
+    decision criteria ("no, I don't want X, I want Y for reason Z")
+  - explicitly stated a default I want the agent to hold ("assume I always
+    want tests", "I'm never in favor of casting around types")
+  - rejected a tradeoff the agent proposed using a principle, not a
+    one-off detail
+  - revealed a value pair where I clearly favor one side (e.g.
+    correctness > simplicity, explicit > implicit, types > comments)
+
+  DO NOT propose:
+  - one-off task instructions
+  - communication style preferences (how-to-communicate-with-me)
+  - things I care about as topics or domains (what-i-care-about)
+
+structure: |
+  Short H2 sections. Each section opens with a value tension I have
+  resolved, then states the resolution as DO ASSUME / DO NOT ASSUME pairs,
+  with one or two sentences of justification.
+
+  Mirror the style of the existing "Simple vs Correct" section.
+
+style_examples:
+  - |
+    ## Explicit vs Implicit
+
+    DO NOT ASSUME that conventions, magic, or implicit behavior is what I
+    want. Implicit makes audit harder.
+
+    DO ASSUME that I want explicit, even at the cost of more typing.
+
+scope:
+  min_confidence: medium
+  max_proposals_per_run: 4

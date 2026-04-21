@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "paths": {
+      "@mariozechner/pi-coding-agent": ["/Users/m/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/dist/index.d.ts"],
+      "@mariozechner/pi-ai": ["/Users/m/.bun/install/global/node_modules/@mariozechner/pi-ai/dist/index.d.ts"],
+      "@mariozechner/pi-tui": ["/Users/m/.bun/install/global/node_modules/@mariozechner/pi-tui/dist/index.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

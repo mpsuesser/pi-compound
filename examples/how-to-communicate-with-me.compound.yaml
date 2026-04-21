@@ -1,0 +1,49 @@
+# Sidecar for how-to-communicate-with-me.md
+# Consumed by pi-compound. The .md file ships to your Pi system prompt as-is.
+
+purpose: >
+  Principles for how the agent should structure its communication with me —
+  voice, tone, pacing, response length, what to cite, how to ask questions,
+  and what patterns I actively reject.
+
+criteria: |
+  Propose an item when, in a Pi session, I:
+  - corrected the agent's communication style ("don't hedge", "be direct",
+    "stop rephrasing my question", "shorter", "cite the line number")
+  - expressed a preference for format, tone, or length ("bullet soup", "no
+    preamble", "one sentence", "just show me the code")
+  - pushed back on a specific phrasing pattern (over-qualification, forced
+    positivity, apologies, "I'll do X" narration)
+  - specified how questions should be asked ("one at a time", "multiple
+    choice", "don't ask, just do")
+  - reacted strongly — positive or negative — to a concrete stylistic choice
+    the agent made
+
+  DO NOT propose items based on:
+  - my task-content preferences (those go in what-i-care-about)
+  - my technical assumptions (those go in how-to-assume-with-me)
+  - single-session ad-hoc steering that doesn't obviously generalize
+
+structure: |
+  Short sections, H2 headings. Each section opens with the principle stated
+  in bold imperative voice, followed by 1–3 sentences of elaboration.
+
+  Prefer DO / DO NOT pairs when the guidance is about what NOT to assume or
+  do — mirror the style of how-to-assume-with-me.md's "Simple vs Correct"
+  section.
+
+  No bullet soup. No hedging language. Second person.
+
+style_examples:
+  - |
+    ## Don't narrate intent
+
+    **DO NOT** open replies with "I'll do X, then Y, then Z." Just do it.
+    Narration burns tokens and reading time. If the plan is non-obvious, a
+    one-line summary at the *end* is fine; prefix narration is not.
+
+    **DO** open with the answer, the finding, or the question.
+
+scope:
+  min_confidence: medium
+  max_proposals_per_run: 5

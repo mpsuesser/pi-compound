@@ -1,0 +1,52 @@
+{
+	"$schema": "https://www.schemastore.org/package.json",
+	"name": "pi-compound",
+	"version": "0.1.0",
+	"description": "Turn your past Pi sessions into system-prompt context docs. A two-stage LLM pipeline extracts durable preferences from session transcripts; you approve or reject from a TUI; approved items are appended to plain-markdown docs that ship verbatim to your system prompt.",
+	"keywords": [
+		"pi",
+		"pi-package",
+		"pi-extension",
+		"pi-mono",
+		"pi-coding-agent",
+		"sessions",
+		"reflection",
+		"memory",
+		"context",
+		"system-prompt",
+		"autopoietic"
+	],
+	"homepage": "https://github.com/mpsuesser/pi-compound#readme",
+	"bugs": {
+		"url": "https://github.com/mpsuesser/pi-compound/issues"
+	},
+	"license": "MIT",
+	"author": "Marc Suesser",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mpsuesser/pi-compound.git"
+	},
+	"type": "module",
+	"files": [
+		"src",
+		"examples",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"pi": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"peerDependencies": {
+		"@mariozechner/pi-coding-agent": "*",
+		"@mariozechner/pi-ai": "*",
+		"@mariozechner/pi-tui": "*",
+		"yaml": "^2"
+	},
+	"devDependencies": {
+		"@types/node": "^25.6.0",
+		"typescript": "^6.0.3"
+	}
+}
