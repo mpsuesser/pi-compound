@@ -9,3 +9,7 @@ bun.lock
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# clipboard-manager strays (e.g. Raycast, Maccy, pbcopy/pbpaste wrappers)
+clipboard*.txt
+clipboard*.log
